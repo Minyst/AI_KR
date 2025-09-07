@@ -22,7 +22,8 @@ for train_img in train_imgs:
 r = np.array(r)
 g = np.array(g)
 b = np.array(b)
-print(r.mean(), r.std(), g.mean(), g.std(), b.mean(), b.std())
+print(r.mean(), g.mean(), b.mean(), r.std(), g.std(), b.std())
+
 
 
 

@@ -39,7 +39,7 @@ class MNISTDataset(Dataset):
         for path in paths:
             label = os.path.basename(path).split("_")[0]
             self.samples.append((path, label))
-        print("a")
+        
     def __len__(self):
         return len(self.samples)
     
@@ -265,5 +265,6 @@ for epoch in range(1, num_epochs+1):
             save_path = os.path.join(save_init, "best_model.pth") 
             torch.save(model.state_dict(), save_path)
             print(f"Best model saved at Epoch {best_epoch} with Accuracy: {best_accuracy:.2f}%")
+
 
 print(f"Best Epoch {best_epoch}, Best Accuracy: {best_accuracy:.2f}%")

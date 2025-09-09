@@ -19,7 +19,9 @@ for train_img in train_imgs:
     r.append(img_to_tensor[0])
     g.append(img_to_tensor[1])
     b.append(img_to_tensor[2])
+    
 r = np.array(r)
 g = np.array(g)
 b = np.array(b)
+
 print(r.mean(), g.mean(), b.mean(), r.std(), g.std(), b.std())
